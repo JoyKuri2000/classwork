@@ -17,8 +17,6 @@ public class LoginSteps extends Config {
         String exp = "Sign In";
         Assert.assertEquals(act, exp);
     }
-
-
 //    @And("user enter valid email address")
 //    public void userEnterValidEmailAddress() {
 //        driver.findElement(By.name("email")).sendKeys(emailAdd);
@@ -31,14 +29,12 @@ public class LoginSteps extends Config {
     public void userEnterValidPassword() {
         lp.enterPassword(passwordAdd);
     }
-
     @When("user clicks on login button")
     public void userClicksOnLoginButton() {
         lp.clickOnLoginButton();
     }
-
     @Then("user should be able to successfully log in")
     public void userShouldBeAbleToSuccessfullyLogIn() {
-        driver.findElement(By.xpath("//*[@id=\"login_form\"]/input[3]")).click();
+        lp.verifyUserLogSuccessfully();
     }
 }

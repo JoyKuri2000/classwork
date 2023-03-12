@@ -24,7 +24,7 @@ public class Hook extends Config {
             case "qa":
                 url = "http://www.qa.taltektc.com";
                 emailAdd = "Jkuri2000@gmail.com";
-                passwordAdd = "Kurijoy2000";
+                passwordAdd = "Kurijoy0002";
                 break;
             case "stg":
                 url = "http://www.stage.taltektc.com";
