@@ -31,9 +31,10 @@ public class loginPageObjects extends Config {
     public void clickOnLoginButton(){
         loginButtonLocator.click();
     }
-
+    @FindBy(how= How.XPATH, using = "//*[@id=\"profile_form\"]/legend")
+    public WebElement pageChecker;
     public void verifyUserLogSuccessfully(){
-        String act = driver.findElement(By.xpath("//*[@id=\"profile_form\"]/legend")).getText();
+        String act = pageChecker.getText();
         String exp = "Welcome to TalentTek";
         Assert.assertEquals(act, exp);
     }

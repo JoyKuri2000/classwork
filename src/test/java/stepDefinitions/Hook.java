@@ -3,6 +3,9 @@ package stepDefinitions;
 import base.Config;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class Hook extends Config {
     //QA: http://www.qa.taltektc.com
@@ -39,9 +42,15 @@ public class Hook extends Config {
     }
 
     @After
-    public void afterEachTest(){
-        driver.quit();
+    public void afterEachTest(Scenario scenario){
+        try{
+            if(scenario.isFailed()){
+                final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenshot, "image/png", scenario.getName());
+            }
+    }finally {
+            driver.quit();
+        }
     }
-
 
 }

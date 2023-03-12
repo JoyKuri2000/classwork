@@ -3,11 +3,32 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-03-12T16:01:34.475Z",
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 30567000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user in TalentTek Homepage",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.userInTalentTekHomepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-12T16:50:47.454Z",
         "before": [
           {
             "result": {
-              "duration": 4615479000,
+              "duration": 6094549000,
               "status": "passed"
             },
             "match": {
@@ -15,18 +36,18 @@
             }
           }
         ],
-        "line": 3,
+        "line": 5,
         "name": "User should be able to login with valid credentials",
         "description": "",
         "id": "login-feature;user-should-be-able-to-login-with-valid-credentials",
         "after": [
           {
             "result": {
-              "duration": 142681000,
+              "duration": 164328000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.Hook.afterEachTest()"
+              "location": "stepDefinitions.Hook.afterEachTest(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -35,22 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 33482000,
+              "duration": 279920000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user in TalentTek Homepage",
-            "match": {
-              "location": "stepDefinitions.LoginSteps.userInTalentTekHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 211770000,
-              "status": "passed"
-            },
-            "line": 5,
+            "line": 6,
             "name": "user enter valid email address",
             "match": {
               "location": "stepDefinitions.LoginSteps.userEnterValidEmailAddress()"
@@ -59,10 +68,10 @@
           },
           {
             "result": {
-              "duration": 70494000,
+              "duration": 82041000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "user enter valid password",
             "match": {
               "location": "stepDefinitions.LoginSteps.userEnterValidPassword()"
@@ -71,10 +80,10 @@
           },
           {
             "result": {
-              "duration": 58168000,
+              "duration": 68975000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "user clicks on login button",
             "match": {
               "location": "stepDefinitions.LoginSteps.userClicksOnLoginButton()"
@@ -83,10 +92,10 @@
           },
           {
             "result": {
-              "duration": 448542000,
+              "duration": 407334000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "user should be able to successfully log in",
             "match": {
               "location": "stepDefinitions.LoginSteps.userShouldBeAbleToSuccessfullyLogIn()"
