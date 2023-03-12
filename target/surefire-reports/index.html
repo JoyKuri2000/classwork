@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User should not be able to login with valid email and invalid password&quot;, &quot;Optional[Login Feature]&quot;)">runScenario("User should not be able to login with valid email and invalid password", "Optional[Login Feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Optional[Login Feature]&quot;)">runScenario("User should be able to login with valid credentials", "Optional[Login Feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,7 +104,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User should be able to create brand new&quot;, &quot;Optional[Signup Feature]&quot;)">runScenario("User should be able to create brand new", "Optional[Signup Feature]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Optional[Login Feature]&quot;)">runScenario("User should be able to login with valid credentials", "Optional[Login Feature]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -138,104 +119,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User should not be able to login with valid email and invalid password&quot;, &quot;Optional[Login Feature]&quot;)">
-                  </a> <!-- runScenario("User should not be able to login with valid email and invalid password", "Optional[Login Feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should not be able to login with valid email and invalid password", "Optional[Login Feature]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;User in TalentTEK Homepage&apos; and 4 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;User in TalentTEK Homepage&quot;)
-public void user_in_talent_tek_homepage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given(&quot;User enter valid email address&quot;)
-public void user_enter_valid_email_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given(&quot;User enter invalid password&quot;)
-public void user_enter_invalid_password() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;User clicks on Log In button&quot;)
-public void user_clicks_on_log_in_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;User should be able to see {string}&quot;)
-public void user_should_be_able_to_see(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 10 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Optional[Login Feature]&quot;)">
-                  </a> <!-- runScenario("User should be able to login with valid credentials", "Optional[Login Feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to login with valid credentials", "Optional[Login Feature]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;user enter valid password&apos; and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user enter valid password&quot;)
-public void user_enter_valid_password() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks on login button&quot;)
-public void user_clicks_on_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should be able to successfully log in&quot;)
-public void user_should_be_able_to_successfully_log_in() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 10 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -244,10 +127,10 @@ public void user_should_be_able_to_successfully_log_in() {
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to create brand new&quot;, &quot;Optional[Signup Feature]&quot;)">
-                  </a> <!-- runScenario("User should be able to create brand new", "Optional[Signup Feature]") -->
+                  <a name="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Optional[Login Feature]&quot;)">
+                  </a> <!-- runScenario("User should be able to login with valid credentials", "Optional[Login Feature]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to create brand new", "Optional[Signup Feature]")</span>
+                  <span class="parameters">("User should be able to login with valid credentials", "Optional[Login Feature]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -266,6 +149,7 @@ public void user_should_be_able_to_successfully_log_in() {
   &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestRunner&quot;/&gt;
+      &lt;class name=&quot;base.TestData&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -279,7 +163,7 @@ public void user_should_be_able_to_successfully_log_in() {
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -313,24 +197,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner')
-data.setCell(0, 3, 11502);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'TestRunner')
-data.setCell(1, 3, 3654);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'TestRunner')
-data.setCell(2, 3, 3626);
+data.setCell(0, 3, 8933);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -362,24 +238,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("User should be able to login with valid credentials", "Optional[Login Feature]")</span>
-                <span class="method-start">327 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("User should not be able to login with valid email and invalid password", "Optional[Login Feature]")</span>
-                <span class="method-start">11836 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User should be able to create brand new", "Optional[Signup Feature]")</span>
-                <span class="method-start">15491 ms</span>
+                <span class="method-start">477 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">19118 ms</span>
+                <span class="method-start">9412 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

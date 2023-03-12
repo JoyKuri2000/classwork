@@ -1,5 +1,5 @@
 Feature: Login Feature
-
+  @smoke
   Scenario: User should be able to login with valid credentials
     Given user in TalentTek Homepage
     And user enter valid email address

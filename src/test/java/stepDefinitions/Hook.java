@@ -15,11 +15,16 @@ public class Hook extends Config {
 
     @Before
     public void beforeEachTest(){
-
-        driver = setupBrowser(driverType);
+        if(driverType==null){
+            driverType="ch";
+        }else {
+            driver = setupBrowser(driverType);
+        }
         switch(envType) {
             case "qa":
                 url = "http://www.qa.taltektc.com";
+                emailAdd = "Jkuri2000@gmail.com";
+                passwordAdd = "Kurijoy2000";
                 break;
             case "stg":
                 url = "http://www.stage.taltektc.com";
@@ -27,7 +32,8 @@ public class Hook extends Config {
             case "prod":
                 url = "http://www.prod.taltektc.com";
                 break;
-
+            default:
+                url = "http://www.qa.taltektc.com";
         }
         driver.get(url);
     }

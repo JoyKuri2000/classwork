@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 19.58 s <<< FAILURE! - in TestRunner
-TestRunner.runScenario["User should be able to login with valid credentials", "Optional[Login Feature]"](1)  Time elapsed: 11.545 s  <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 12.439 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["User should be able to login with valid credentials", "Optional[Login Feature]"](1)  Time elapsed: 4.912 s  <<< FAILURE!
 io.cucumber.testng.UndefinedStepException: 
 The step 'user enter valid password' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -24,7 +24,7 @@ public void user_should_be_able_to_successfully_log_in() {
 }
 
 
-TestRunner.runScenario["User should not be able to login with valid email and invalid password", "Optional[Login Feature]"](2)  Time elapsed: 3.641 s  <<< FAILURE!
+TestRunner.runScenario["User should not be able to login with valid email and invalid password", "Optional[Login Feature]"](2)  Time elapsed: 3.365 s  <<< FAILURE!
 io.cucumber.testng.UndefinedStepException: 
 The step 'User in TalentTEK Homepage' and 4 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
