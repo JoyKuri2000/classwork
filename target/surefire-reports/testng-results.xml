@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-12T12:50:46 EDT" name="Surefire suite" finished-at="2023-03-12T12:50:54 EDT" duration-ms="7885">
+  <suite started-at="2023-03-19T12:52:42 EDT" name="Surefire suite" finished-at="2023-03-19T12:52:50 EDT" duration-ms="7594">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@12405818]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@10b48321]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-03-12T12:50:46 EDT" name="Surefire test" finished-at="2023-03-12T12:50:54 EDT" duration-ms="7885">
+    <test started-at="2023-03-19T12:52:42 EDT" name="Surefire test" finished-at="2023-03-19T12:52:50 EDT" duration-ms="7594">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@12405818]" started-at="2023-03-12T12:50:46 EDT" name="setUpClass" finished-at="2023-03-12T12:50:47 EDT" duration-ms="433" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@10b48321]" started-at="2023-03-19T12:52:42 EDT" name="setUpClass" finished-at="2023-03-19T12:52:42 EDT" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@12405818]" started-at="2023-03-12T12:50:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-12T12:50:54 EDT" duration-ms="7318" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@10b48321]" started-at="2023-03-19T12:52:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-19T12:52:50 EDT" duration-ms="7058" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User should be able to login with valid credentials"]]>
+                <![CDATA["User should be able to create brand new TalTekTC account"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login Feature]"]]>
+                <![CDATA["Optional[Signup Feature]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@12405818]" started-at="2023-03-12T12:50:54 EDT" name="tearDownClass" finished-at="2023-03-12T12:50:54 EDT" duration-ms="102" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@10b48321]" started-at="2023-03-19T12:52:50 EDT" name="tearDownClass" finished-at="2023-03-19T12:52:50 EDT" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -37,4 +37,9 @@ public class LoginSteps extends Config {
     public void userShouldBeAbleToSuccessfullyLogIn() {
         lp.verifyUserLogSuccessfully();
     }
+
+    @And("user clicks on {string} button")
+    public void userClicksOnButton(String buttonText) {
+        driver.findElement(By.xpath("//a[contains(text(),'"+buttonText+"')]")).click();
+    }
 }

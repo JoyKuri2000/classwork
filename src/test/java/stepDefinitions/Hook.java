@@ -18,6 +18,7 @@ public class Hook extends Config {
 
     @Before
     public void beforeEachTest(){
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
         if(driverType==null){
             driverType="ch";
         }else {

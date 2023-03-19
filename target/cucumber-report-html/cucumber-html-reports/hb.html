@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>classwork</td>
                           <td>1</td>
-                        <td>12 Mar 2023, 11:21</td>
+                        <td>19 Mar 2023, 12:45</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@hb</td>
-                    <td  class="passed"    >1</td>
-          <td >0</td>
+                    <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >1</td>
           <td >0</td>
           <td >0</td>
+          <td     class="skipped"   >5</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">1</td>
-          <td class="duration" data-value="14280000">014ms</td>
-          <td class="passed">Passed</td>
+          <td class="total">5</td>
+          <td class="duration" data-value="144000">000ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -161,11 +161,11 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">User should be able to create brand new</span>
+  <span class="name">User should be able to create brand new TalTekTC account</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -174,12 +174,12 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+        <div data-toggle="collapse" class=" collapsable-control" data-target="#before-2">
       
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
   
@@ -189,17 +189,44 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-2" class="inner-level collapse collapsable-details ">
+    <div id="before-2" class="inner-level collapse collapsable-details  in ">
               <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDefinitions.Hook.beforeEachTest()</span>
                         
-  <span class="lead-duration duration">3s 365ms</span>
+  <span class="lead-duration duration">6s 582ms</span>
 
           </div>
 
                       
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Error message</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51493/devtools/browser/01486945-72d2-418c-a15c-6ef28595ead1
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Joys-MBP', ip: 'fe80:0:0:0:107a:b24d:e938:3774%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+	at base.Config.setupBrowser(Config.java:20)
+	at stepDefinitions.Hook.beforeEachTest(Hook.java:24)
+</pre>
+      </div>
+    </div>
+  </div>
 
           
           
@@ -211,9 +238,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -223,14 +250,98 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Given</span>
   <span class="name">user in TalentTek Homepage</span>
   
-  <span class="lead-duration duration">014ms</span>
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user clicks on "Create new account" button</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user enters first and last name</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user enters valid email address</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user enters month under birthdate</span>
+  
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -251,9 +362,9 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+        <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
       
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
   
@@ -263,17 +374,30 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details  in ">
               <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
-                          <span class="location name">stepDefinitions.Hook.afterEachTest()</span>
+                          <span class="location name">stepDefinitions.Hook.afterEachTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">136ms</span>
+  <span class="lead-duration duration">008ms</span>
 
           </div>
 
                       
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Error message</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "stepDefinitions.Hook.driver" is null
+	at stepDefinitions.Hook.afterEachTest(Hook.java:52)
+</pre>
+      </div>
+    </div>
+  </div>
 
           
           

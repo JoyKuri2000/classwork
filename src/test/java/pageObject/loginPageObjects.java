@@ -38,5 +38,12 @@ public class loginPageObjects extends Config {
         String exp = "Welcome to TalentTek";
         Assert.assertEquals(act, exp);
     }
+    @FindBy(how= How.XPATH, using = "//a[contains(text(),'Create new account')]")
+    public WebElement createNewAccountButton;
+    public void clickOnButton (String button){
+        if (button.contains("Create new account")){
+            createNewAccountButton.click();
+        }
+    }
 
 }

@@ -3,32 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 30567000,
-              "status": "passed"
-            },
-            "line": 3,
-            "name": "user in TalentTek Homepage",
-            "match": {
-              "location": "stepDefinitions.LoginSteps.userInTalentTekHomepage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-03-12T16:50:47.454Z",
+        "start_timestamp": "2023-03-19T16:52:43.133Z",
         "before": [
           {
             "result": {
-              "duration": 6094549000,
+              "duration": 5493287000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "User should be able to login with valid credentials",
+        "line": 4,
+        "name": "User should be able to create brand new TalTekTC account",
         "description": "",
-        "id": "login-feature;user-should-be-able-to-login-with-valid-credentials",
+        "id": "signup-feature;user-should-be-able-to-create-brand-new-taltektc-account",
         "after": [
           {
             "result": {
-              "duration": 164328000,
+              "duration": 185586000,
               "status": "passed"
             },
             "match": {
@@ -56,51 +35,69 @@
         "steps": [
           {
             "result": {
-              "duration": 279920000,
+              "duration": 41970000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user in TalentTek Homepage",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.userInTalentTekHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 315144000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user enter valid email address",
+            "name": "user clicks on \"Create new account\" button",
             "match": {
-              "location": "stepDefinitions.LoginSteps.userEnterValidEmailAddress()"
+              "arguments": [
+                {
+                  "val": "\"Create new account\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.userClicksOnButton(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 82041000,
+              "duration": 565843000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enter valid password",
+            "name": "user enters first and last name",
             "match": {
-              "location": "stepDefinitions.LoginSteps.userEnterValidPassword()"
+              "location": "stepDefinitions.SignupSteps.userEntersFirstAndLastName()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 68975000,
+              "duration": 139986000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user clicks on login button",
+            "name": "user enters valid email address",
             "match": {
-              "location": "stepDefinitions.LoginSteps.userClicksOnLoginButton()"
+              "location": "stepDefinitions.SignupSteps.userEntersValidEmailAddress()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 407334000,
+              "duration": 144058000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user should be able to successfully log in",
+            "line": 11,
+            "name": "user enters month under birthdate",
             "match": {
-              "location": "stepDefinitions.LoginSteps.userShouldBeAbleToSuccessfullyLogIn()"
+              "location": "stepDefinitions.SignupSteps.userEntersMonthUnderBirthdate()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -110,11 +107,11 @@
         ]
       }
     ],
-    "name": "Login Feature",
+    "name": "Signup Feature",
     "description": "",
-    "id": "login-feature",
+    "id": "signup-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/login.feature",
+    "uri": "file:src/test/java/features/signup.feature",
     "tags": []
   }
 ]

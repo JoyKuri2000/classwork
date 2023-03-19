@@ -3,5 +3,7 @@ pageObject/loginPageObjects.class
 stepDefinitions/LoginSteps.class
 base/test.class
 base/TestData.class
+stepDefinitions/SignupSteps.class
+pageObject/signupPageObjects.class
 base/Config.class
 TestRunner.class
